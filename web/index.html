@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <title>Formulario de registro - Mi web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <center>  
+            <form action="registrar.jsp" methog="POST" >
+                <font  size="3" face="San Francisco" >
+                 <h1> Formulario de Registro</h1> <br><br>    
+                 <table class="tablas">
+                    <tr>
+                        <td><label>Nombre</label></td>
+                        <td><input type="text" name="nombre" maxlength="50" required="" ></td>
+                    </tr>
+                    <tr>
+                        <td><label>Apellido Paterno</label></td>
+                        <td><input type="text" name="apellido_paterno" maxlength="50" required="" ></td>
+                    </tr>
+                    <tr>
+                        <td><label>Apellido Materno</label></td>
+                        <td><input type="text" name="apellido_materno" maxlength="50" required=""></td>
+                    </tr>
+                    <tr>
+                          <td><label>Sexo</label></td>
+                         <td>   <input type="radio" name="gender1" value="femenino" checked> Femenino
+                                <input type="radio" name="gender2" value="masculino"> Masculino <br> </td>       
+                    </tr>
+                    <tr>
+                        <td><label>Correo eléctronico</label></td>
+                        <td><input type="email" name="email" required="" ></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><label>Poblacion</label> </td>
+                        <td><select id="box" name="ciudades">
+                            <option value="1">Santiago</option>
+                            <option value="2">La Serena</option>
+                            <option value="3">Rancagua</option>
+                            </select></td>
+                            
+                    </tr>
+                     <tr>
+                        <td><label>Descripción</label></td>
+                        <td> <textarea name="message" rows="4" cols="22"></textarea></td>
+                    </tr>   
+
+                </tbody>
+               </table>
+                 <br> <input type="checkbox" name="forma" value="1" id="check1" checked>Deseo recibir información sobre novedades y ofertas <br>
+                      <input type="checkbox" name="forma1"value="2" id="check2">Declaro haber leído y aceptar las condiciones generales del programa y la 
+                                                            normativa sobre protección de datos<br>
+                      <br><button class="boton" type="submit">Guardar en Base de datos</button>
+                      <br>
+                     
+             
+            
+              <form action="ObtenerDatos.jsp" method="POST">
+                  
+                    <br><button class="boton" type="submit">Mostrar Datos</button>
+                 
+                  
+              </form>
+              </font>
+        </center>
+    </body>
+</html>

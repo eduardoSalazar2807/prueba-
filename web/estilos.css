@@ -1,0 +1,47 @@
+body{
+    background: whitesmoke;  
+}
+.tablas{
+    margin-top: 5px;
+    table-layout: fixed;
+    border: 2px solid black;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-content: center;
+  }
+.boton{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 8px;
+      background-color: white;
+      height: 30px;
+  }
+  .boton:hover {
+    background-color: #164585;
+    color: white;
+    }
+   .boton:active {
+    background-color: #164585;
+     box-shadow: 0 5px #666;
+    transform: translateY(4px); 
+    }
+    
+    #buttonback{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 8px;
+      background-color: #80B2BB;
+      height: 40px;
+      width: 80px;
+      
+    }
+    #buttonback:hover {
+     background-color: #164585; 
+     color: white;
+    }
+    
+  
+  @font-face {
+  font-family: "San Francisco";
+  color: black color;
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+ }
